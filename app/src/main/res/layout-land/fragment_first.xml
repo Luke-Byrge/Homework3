@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectFragment">
+
+    <Spinner
+        android:id="@+id/backgroundSongSpinner"
+        android:layout_width="728dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:entries="@array/backgroundMusic"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="731dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/backgroundMusic"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="722dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/soundEffects"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundSongSpinner" />
+
+    <Spinner
+        android:id="@+id/soundEffect1"
+        android:layout_width="221dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/soundEffect"
+        android:max="100"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <SeekBar
+        android:id="@+id/soundEffectSeekBar1"
+        android:layout_width="219dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soundEffect1" />
+
+    <Spinner
+        android:id="@+id/soundEffect2"
+        android:layout_width="204dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/soundEffect"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toEndOf="@+id/soundEffect1"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <SeekBar
+        android:id="@+id/soundEffectSeekBar2"
+        android:layout_width="210dp"
+        android:layout_height="38dp"
+        android:max="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toEndOf="@+id/soundEffectSeekBar1"
+        app:layout_constraintTop_toBottomOf="@+id/soundEffect2" />
+
+    <Spinner
+        android:id="@+id/soundEffect3"
+        android:layout_width="194dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="4dp"
+        android:entries="@array/soundEffect"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/soundEffect2"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <SeekBar
+        android:id="@+id/soundEffectSeekBar3"
+        android:layout_width="191dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:max="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toEndOf="@+id/soundEffectSeekBar2"
+        app:layout_constraintTop_toBottomOf="@+id/soundEffect3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/soundEffect1"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="52dp"
+        android:text="@string/soundEffect2"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/soundEffect3"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

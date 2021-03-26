@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Homework3</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="selectMusicScreenButton">Select Music</string>
+    <string name="playMusicScreenButton">Play Music</string>
+    <string name="backgroundMusic">Background Music</string>
+    <string name="soundEffects">Add Sound Effects</string>
+    <string name="soundEffect1">Sound Effect 1</string>
+    <string name="soundEffect2">Sound Effect 2</string>
+    <string name="soundEffect3">Sound Effect 3</string>
+
+    <string name="playpause">Play</string>
+    <string name="restart">Restart</string>
+
+    <string-array name="backgroundMusic">
+        <item>Go Tech Go!</item>
+        <item>Clapping</item>
+        <item>Cheering</item>
+        <item>GoHokies</item>
+    </string-array>
+    <string-array name="soundEffect">
+        <item>Clapping</item>
+        <item>Cheering</item>
+        <item>GoHokies</item>
+    </string-array>
+</resources>
